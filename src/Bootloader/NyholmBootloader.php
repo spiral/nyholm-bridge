@@ -16,22 +16,15 @@ use Psr\Http\Message\StreamFactoryInterface;
 use Psr\Http\Message\UploadedFileFactoryInterface;
 use Psr\Http\Message\UriFactoryInterface;
 use Spiral\Boot\Bootloader\Bootloader;
+use Spiral\Nyholm\ResponseFactory;
 
 final class NyholmBootloader extends Bootloader
 {
     const SINGLETONS = [
-        ServerRequestFactoryInterface::class => [self::class, 'psr17Factory'],
-        ResponseFactoryInterface::class      => [self::class, 'psr17Factory'],
-        StreamFactoryInterface::class        => [self::class, 'psr17Factory'],
-        UploadedFileFactoryInterface::class  => [self::class, 'psr17Factory'],
-        UriFactoryInterface::class           => [self::class, 'psr17Factory']
+        ServerRequestFactoryInterface::class => Psr17Factory::class,
+        ResponseFactoryInterface::class      => ResponseFactory::class,
+        StreamFactoryInterface::class        => Psr17Factory::class,
+        UploadedFileFactoryInterface::class  => Psr17Factory::class,
+        UriFactoryInterface::class           => Psr17Factory::class,
     ];
-
-    /**
-     * @return Psr17Factory
-     */
-    protected function psr17Factory(): Psr17Factory
-    {
-        return new Psr17Factory();
-    }
 }
