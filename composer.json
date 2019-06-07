@@ -24,12 +24,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Spiral\\Nylohm\\": "src/"
+      "Spiral\\Nyholm\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Spiral\\Nylohm\\Tests\\": "tests/"
+      "Spiral\\Nyholm\\Tests\\": "tests/"
     }
   }
 }

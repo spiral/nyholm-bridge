@@ -7,7 +7,7 @@
  */
 declare(strict_types=1);
 
-namespace Spiral\Nylohm\Bootloader;
+namespace Spiral\Nyholm\Bootloader;
 
 use Nyholm\Psr7\Factory\Psr17Factory;
 use Psr\Http\Message\ResponseFactoryInterface;
@@ -17,7 +17,7 @@ use Psr\Http\Message\UploadedFileFactoryInterface;
 use Psr\Http\Message\UriFactoryInterface;
 use Spiral\Boot\Bootloader\Bootloader;
 
-final class NylohmBootloader extends Bootloader
+final class NyholmBootloader extends Bootloader
 {
     const SINGLETONS = [
         ServerRequestFactoryInterface::class => Psr17Factory::class,

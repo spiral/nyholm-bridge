@@ -7,7 +7,7 @@
  */
 declare(strict_types=1);
 
-namespace Spiral\Nylohm\Tests;
+namespace Spiral\Nyholm\Tests;
 
 use Nyholm\Psr7\Factory\Psr17Factory;
 use PHPUnit\Framework\TestCase;
@@ -18,7 +18,7 @@ use Psr\Http\Message\UploadedFileFactoryInterface;
 use Psr\Http\Message\UriFactoryInterface;
 use Spiral\Boot\BootloadManager;
 use Spiral\Core\Container;
-use Spiral\Nylohm\Bootloader\NylohmBootloader;
+use Spiral\Nyholm\Bootloader\NyholmBootloader;
 
 class BootloaderTest extends TestCase
 {
@@ -26,7 +26,7 @@ class BootloaderTest extends TestCase
     {
         $c = new Container();
         $b = new BootloadManager($c);
-        $b->bootload([NylohmBootloader::class]);
+        $b->bootload([NyholmBootloader::class]);
 
         $this->assertInstanceOf(Psr17Factory::class, $c->get(ServerRequestFactoryInterface::class));
         $this->assertInstanceOf(Psr17Factory::class, $c->get(ResponseFactoryInterface::class));
