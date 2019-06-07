@@ -11,8 +11,12 @@
   ],
   "require": {
     "php": "^7.1",
-    "spiral/framework": "^2.0",
-    "nyholm/psr7": "^1.1"
+    "nyholm/psr7": "^1.1",
+    "spiral/http": "^2.0",
+    "spiral/framework": "^2.0"
+  },
+  "replace": {
+    "zendframework/zend-diactoros": "1.*|2.*"
   },
   "require-dev": {
     "phpunit/phpunit": "~7.0",
