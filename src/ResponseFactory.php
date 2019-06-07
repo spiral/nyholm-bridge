@@ -40,7 +40,7 @@ final class ResponseFactory implements ResponseFactoryInterface
     public function createResponse(int $code = 200, string $reasonPhrase = ''): ResponseInterface
     {
         $response = $this->factory->createResponse($code, $reasonPhrase);
-        foreach ($this->config->baseHeaders() as $header => $value) {
+        foreach ($this->config->getBaseHeaders() as $header => $value) {
             $response = $response->withAddedHeader($header, $value);
         }
 
