@@ -20,11 +20,11 @@ use Spiral\Boot\Bootloader\Bootloader;
 final class NyholmBootloader extends Bootloader
 {
     const SINGLETONS = [
-        ServerRequestFactoryInterface::class => [self::class, 'factory'],
-        ResponseFactoryInterface::class      => [self::class, 'factory'],
-        StreamFactoryInterface::class        => [self::class, 'factory'],
-        UploadedFileFactoryInterface::class  => [self::class, 'factory'],
-        UriFactoryInterface::class           => [self::class, 'factory']
+        ServerRequestFactoryInterface::class => [self::class, 'psr17Factory'],
+        ResponseFactoryInterface::class      => [self::class, 'psr17Factory'],
+        StreamFactoryInterface::class        => [self::class, 'psr17Factory'],
+        UploadedFileFactoryInterface::class  => [self::class, 'psr17Factory'],
+        UriFactoryInterface::class           => [self::class, 'psr17Factory']
     ];
 
     /**
