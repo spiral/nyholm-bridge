@@ -1,7 +1,7 @@
 {
-  "name": "spiral/nylon-bridge",
+  "name": "spiral/nyholm-bridge",
   "type": "library",
-  "description": "Spiral Framework: Nylon PSR-7/PSR-17 bridge",
+  "description": "Spiral Framework: Nyholm PSR-7/PSR-17 bridge",
   "license": "MIT",
   "authors": [
     {
@@ -12,7 +12,7 @@
   "require": {
     "php": "^7.1",
     "nyholm/psr7": "^1.1",
-    "spiral/http": "^2.0",
+    "spiral/http": "^1.0",
     "spiral/framework": "^2.0"
   },
   "replace": {
@@ -24,12 +24,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Spiral\\Nylon\\": "src/"
+      "Spiral\\Nylohm\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Spiral\\Nylon\\Tests\\": "tests/"
+      "Spiral\\Nylohm\\Tests\\": "tests/"
     }
   }
 }

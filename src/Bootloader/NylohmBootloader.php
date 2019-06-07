@@ -17,7 +17,7 @@ use Psr\Http\Message\UploadedFileFactoryInterface;
 use Psr\Http\Message\UriFactoryInterface;
 use Spiral\Boot\Bootloader\Bootloader;
 
-final class NylonBootloader extends Bootloader
+final class NylohmBootloader extends Bootloader
 {
     const SINGLETONS = [
         ServerRequestFactoryInterface::class => Psr17Factory::class,
