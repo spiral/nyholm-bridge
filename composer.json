@@ -16,7 +16,7 @@
     "spiral/framework": "^2.0"
   },
   "replace": {
-    "zendframework/zend-diactoros": "1.*|2.*"
+    "zendframework/zend-diactoros": "*"
   },
   "require-dev": {
     "phpunit/phpunit": "~7.0",
