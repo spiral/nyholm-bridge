@@ -7,7 +7,7 @@
  */
 declare(strict_types=1);
 
-namespace Spiral\Nylon\Bootloader;
+namespace Spiral\Nylohm\Bootloader;
 
 use Nyholm\Psr7\Factory\Psr17Factory;
 use Psr\Http\Message\ResponseFactoryInterface;
