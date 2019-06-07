@@ -24,3 +24,5 @@ class App extends Kernel
     ];
 }
 ```
+
+> Make sure to remove default `Spiral\Bootloader\Http\DiactorosBootloader`.
