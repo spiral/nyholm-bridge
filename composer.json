@@ -13,10 +13,8 @@
     "php": "^7.1",
     "nyholm/psr7": "^1.1",
     "spiral/http": "^1.0",
-    "spiral/framework": "^2.0"
-  },
-  "replace": {
-    "zendframework/zend-diactoros": "1.*|2.*"
+    "spiral/framework": "^2.0",
+    "spiral/code-style": "^1.0"
   },
   "require-dev": {
     "phpunit/phpunit": "~7.0",

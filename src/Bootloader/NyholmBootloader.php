@@ -1,10 +1,12 @@
 <?php
+
 /**
  * Spiral Framework.
  *
  * @license   MIT
  * @author    Anton Titov (Wolfy-J)
  */
+
 declare(strict_types=1);
 
 namespace Spiral\Nyholm\Bootloader;
@@ -20,7 +22,7 @@ use Spiral\Nyholm\ResponseFactory;
 
 final class NyholmBootloader extends Bootloader
 {
-    const SINGLETONS = [
+    protected const SINGLETONS = [
         ServerRequestFactoryInterface::class => Psr17Factory::class,
         ResponseFactoryInterface::class      => ResponseFactory::class,
         StreamFactoryInterface::class        => Psr17Factory::class,

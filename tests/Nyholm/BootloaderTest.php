@@ -1,10 +1,12 @@
 <?php
+
 /**
  * Spiral Framework.
  *
  * @license   MIT
  * @author    Anton Titov (Wolfy-J)
  */
+
 declare(strict_types=1);
 
 namespace Spiral\Nyholm\Tests;
@@ -24,7 +26,7 @@ use Spiral\Nyholm\ResponseFactory;
 
 class BootloaderTest extends TestCase
 {
-    public function testBindings()
+    public function testBindings(): void
     {
         $c = new Container();
         $b = new BootloadManager($c);

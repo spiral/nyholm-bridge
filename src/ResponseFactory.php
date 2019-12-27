@@ -1,10 +1,12 @@
 <?php
+
 /**
  * Spiral Framework.
  *
  * @license   MIT
  * @author    Anton Titov (Wolfy-J)
  */
+
 declare(strict_types=1);
 
 namespace Spiral\Nyholm;
@@ -35,6 +37,7 @@ final class ResponseFactory implements ResponseFactoryInterface
     /**
      * @param int    $code
      * @param string $reasonPhrase
+     *
      * @return ResponseInterface
      */
     public function createResponse(int $code = 200, string $reasonPhrase = ''): ResponseInterface
