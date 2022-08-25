@@ -29,10 +29,6 @@
     "psr-4": {
       "Spiral\\Nyholm\\Tests\\": "tests/"
     }
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "1.2.x-dev"
-    }
+  }
   }
 }
