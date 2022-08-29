@@ -1,6 +1,6 @@
 # Spiral Framework: Nyholm PSR-7/PSR-17 bridge
 [![Latest Stable Version](https://poser.pugx.org/spiral/nyholm-bridge/version)](https://packagist.org/packages/spiral/nyholm-bridge)
-[![Build Status](https://travis-ci.org/spiral/nyholm-bridge.svg?branch=master)](https://travis-ci.org/spiral/nyholm-bridge)
+[![Build Status](https://github.com/spiral/nyholm-bridge/workflows/build/badge.svg)](https://github.com/spiral/nyholm-bridge/actions)
 [![Codecov](https://codecov.io/gh/spiral/nyholm-bridge/branch/master/graph/badge.svg)](https://codecov.io/gh/spiral/nyholm-bridge/)
 
 ## Installation

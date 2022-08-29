@@ -1,12 +1,5 @@
 <?php
 
-/**
- * Spiral Framework.
- *
- * @license   MIT
- * @author    Anton Titov (Wolfy-J)
- */
-
 declare(strict_types=1);
 
 namespace Spiral\Nyholm\Tests;
@@ -18,7 +11,8 @@ use Psr\Http\Message\ServerRequestFactoryInterface;
 use Psr\Http\Message\StreamFactoryInterface;
 use Psr\Http\Message\UploadedFileFactoryInterface;
 use Psr\Http\Message\UriFactoryInterface;
-use Spiral\Boot\BootloadManager;
+use Spiral\Boot\BootloadManager\BootloadManager;
+use Spiral\Boot\BootloadManager\Initializer;
 use Spiral\Core\Container;
 use Spiral\Http\Config\HttpConfig;
 use Spiral\Nyholm\Bootloader\NyholmBootloader;
@@ -29,7 +23,7 @@ class BootloaderTest extends TestCase
     public function testBindings(): void
     {
         $c = new Container();
-        $b = new BootloadManager($c);
+        $b = new BootloadManager($c, new Initializer($c));
         $b->bootload([NyholmBootloader::class]);
 
         $c->bind(HttpConfig::class, new HttpConfig([
