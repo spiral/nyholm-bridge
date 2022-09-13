@@ -7,7 +7,7 @@ namespace Spiral\Nyholm\Tests\Nyholm;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
-use Spiral\Boot\BootloadManager;
+use Spiral\Boot\BootloadManager\BootloadManager;
 use Spiral\Boot\BootloadManager\Initializer;
 use Spiral\Core\Container;
 use Spiral\Http\Config\HttpConfig;
@@ -18,7 +18,7 @@ class ResponseFactoryTest extends TestCase
     public function testBindings(): void
     {
         $c = new Container();
-        $b = new \Spiral\Boot\BootloadManager\BootloadManager($c, new Initializer($c));
+        $b = new BootloadManager($c, $c, $c, new Initializer($c, $c));
         $b->bootload([NyholmBootloader::class]);
 
         $c->bind(HttpConfig::class, new HttpConfig([

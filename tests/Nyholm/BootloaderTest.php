@@ -23,7 +23,7 @@ class BootloaderTest extends TestCase
     public function testBindings(): void
     {
         $c = new Container();
-        $b = new BootloadManager($c, new Initializer($c));
+        $b = new BootloadManager($c, $c, $c, new Initializer($c, $c));
         $b->bootload([NyholmBootloader::class]);
 
         $c->bind(HttpConfig::class, new HttpConfig([
