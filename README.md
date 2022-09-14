@@ -3,7 +3,7 @@
 [![PHP Version Require](https://poser.pugx.org/spiral/nyholm-bridge/require/php)](https://packagist.org/packages/spiral/nyholm-bridge)
 [![Latest Stable Version](https://poser.pugx.org/spiral/nyholm-bridge/v/stable)](https://packagist.org/packages/spiral/nyholm-bridge)
 [![phpunit](https://github.com/spiral/nyholm-bridge/actions/workflows/phpunit.yml/badge.svg)](https://github.com/spiral/nyholm-bridge/actions)
-[![psalm](https://github.com/spiral/nyholm-bridge/actions/workflows/psalm.yml/badge.svg)](https://github.com/spiral/nyholm-bridge/actions)
+[![psalm](https://github.com/spiral/nyholm-bridge/actions/workflows/static-analysis.yml/badge.svg)](https://github.com/spiral/nyholm-bridge/actions)
 [![Codecov](https://codecov.io/gh/spiral/nyholm-bridge/branch/master/graph/badge.svg)](https://codecov.io/gh/spiral/nyholm-bridge)
 [![Total Downloads](https://poser.pugx.org/spiral/nyholm-bridge/downloads)](https://packagist.org/packages/spiral/nyholm-bridge)
 [![type-coverage](https://shepherd.dev/github/spiral/nyholm-bridge/coverage.svg)](https://shepherd.dev/github/spiral/nyholm-bridge)
